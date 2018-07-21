@@ -129,7 +129,7 @@ def main():
     laowang.anzhuang_danjia(ak47,dan_jia)
 
     #7.测试
-    #测试弹夹信息
+    # 测试弹夹信息
     #print(dan_jia)
     #测试枪的信息
     #print(ak47)
