@@ -67,3 +67,20 @@ test_tuple = ('a','b','c','d','e','f','1',2,['a','b'])
 # calc_len(test_str)
 # calc_len(test_list)
 # calc_len(test_tuple)
+
+'''
+写函数，将姓名、性别，城市作为参数，并且性别默认为f(女)。
+如果城市是在长沙并且性别为女，则输出姓名、性别、城市，并返回True,否则返回False
+'''
+
+def city(name,city,gender='f'):
+
+    if city == '长沙' and gender.upper() == 'F':
+        print('姓名：%s\t性别：%s\t城市：%s\t'%(name,gender,city))
+        return True
+    else:
+        return False
+
+#city('lily','长沙')
+#city('lily','长沙','M')
+#city('lily','长沙','F')
