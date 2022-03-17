@@ -6,9 +6,11 @@ Created on 2022-03-16
 '''
 
 import time
+import functools
 
 def run_time(func):
     #函数运行时长
+    @functools.wraps(func)
     def inner(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
