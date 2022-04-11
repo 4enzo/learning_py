@@ -49,6 +49,8 @@ class Foo(object):
     def normal_func(self):
         "实例方法"
         print('This is normal_func')
+        #实例方法调用静态方法使用self.方法名()
+        self.static_func()
 
     #@staticmethod不需要表示自身对象的self和自身类的cls参数，就跟使用函数一样
     #如果方法内部没有操作实例属性的操作，仅仅包含一些工具性的操作，建议使用静态方法，比如格式化时间输出
